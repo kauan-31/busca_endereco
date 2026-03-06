@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart CEP Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-container">
+        <header>
+            <h1>Smart<span>CEP</span></h1>
+            <p>Digite o endereço completo para localizar o CEP</p>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="fullAddress" placeholder="Ex: Av. Paulista, São Paulo, SP">
+            <button onclick="smartSearch()">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </button>
+        </div>
+
+        <div id="loader" class="hidden">Buscando...</div>
+        <div id="results-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
